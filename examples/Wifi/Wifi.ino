@@ -11,7 +11,7 @@ ESPVGAX2 vga;
 void drawMessage(const char *s) {
   vga.begin();
   vga.clear(0);
-  vga.setFont((uint8_t*)fnt_arial12_data, FNT2_ARIAL12_SYMBOLS_COUNT, 
+  vga.setFont((uint8_t*)fnt2_arial12_data, FNT2_ARIAL12_SYMBOLS_COUNT, 
               FNT2_ARIAL12_HEIGHT, FNT2_ARIAL12_GLYPH_WIDTH);
   // measure text
   ESPVGAX2::PrintInfo sz=vga.print(s, 0, 0, true, -1, ESPVGAX2_OP_SET, false, -1, true);
